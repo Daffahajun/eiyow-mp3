@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagu Terbaru</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        .container {
+            padding: 2em;
+        }
+        .song {
+            background-color: #fff;
+            margin: 1em 0;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .song h2 {
+            margin: 0;
+        }
+        .song p {
+            margin: 0.5em 0;
+        }
+        .song a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lagu Terbaru</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="latest_songs.html">Lagu Terbaru</a>
+        <a href="popular.html">Populer</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="contact.html">Kontak</a>
+    </nav>
+    <div class="container">
+        <div class="song">
+            <h2>Linger</h2>
+            <p>Artis: The Cranberries</p>
+            <p><a href="The Cranberries - Linger (Official Music Video).mp3" download onclick="confirmDownload(event, 'Linger')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>Oke</h2>
+            <p>Artis: K3BI</p>
+            <p><a href="Keilandboi - Oke (Music video).mp3" download onclick="confirmDownload(event, 'Oke')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>Songkok Mereng</h2>
+            <p>Artis: K3BI</p>
+            <p><a href="SONGKOK MERENG (LYRIC VIDEO).mp3" download onclick="confirmDownload(event, 'Songkok Mereng')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>Langit Biru</h2>
+            <p>Artis: Muria</p>
+            <p><a href="Langit Biru.mp3" download onclick="confirmDownload(event, 'Langit Biru')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>YOU JUST DON'T KNOW</h2>
+            <p>Artis: Serigala Malam</p>
+            <p><a href="SERIGALA MALAM - YOU JUST DON'T KNOW (OFFICIAL LYRIC VIDEO).mp3" download onclick="confirmDownload(event, 'YOU JUST DON\'T KNOW')">Unduh</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Unduh Lagu Website. Hak Cipta Dilindungi.</p>
+    </footer>
+    <script>
+        function confirmDownload(event, songTitle) {
+            const userConfirmed = confirm(`Apakah Anda yakin ingin mengunduh lagu "${songTitle}"?`);
+            if (!userConfirmed) {
+                event.preventDefault();
+            }
+        }
+    </script>
+</body>
+</html>

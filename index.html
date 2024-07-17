@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situs Web Unduh Lagu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        .container {
+            padding: 2em;
+        }
+        .song {
+            background-color: #fff;
+            margin: 1em 0;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .song h2 {
+            margin: 0;
+        }
+        .song p {
+            margin: 0.5em 0;
+        }
+        .song a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unduh Lagu Favorit Anda</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="lagu_terbaru.html">Lagu Terbaru</a>
+        <a href="populer.html">Populer</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="container">
+        <div class="song">
+            <h2>Bangin</h2>
+            <p>Artis: Muria</p>
+            <p><a href="Muria-Bangin.mp3" download onclick="confirmDownload(event, 'Bangin')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>Oke</h2>
+            <p>Artis: K3BI</p>
+            <p><a href="Keilandboi - Oke (Music video).mp3" download onclick="confirmDownload(event, 'Oke')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>Songkok Mereng</h2>
+            <p>Artis: K3BI</p>
+            <p><a href="SONGKOK MERENG (LYRIC VIDEO).mp3" download onclick="confirmDownload(event, 'Songkok Mereng')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>Langit Biru</h2>
+            <p>Artis: Muria</p>
+            <p><a href="Langit Biru.mp3" download onclick="confirmDownload(event, 'Langit Biru')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>YOU JUST DON'T KNOW </h2>
+            <p>Artis: Serigala Malam</p>
+            <p><a href="SERIGALA MALAM - YOU JUST DON'T KNOW (OFFICIAL LYRIC VIDEO).mp3" download onclick="confirmDownload(event, 'YOU JUST DON\'T KNOW')">Unduh</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Situs Web Unduh Lagu. Hak Cipta Dilindungi.</p>
+    </footer>
+    <script>
+        function confirmDownload(event, songTitle) {
+            const userConfirmed = confirm(`Apakah Anda yakin ingin mengunduh lagu "${songTitle}"?`);
+            if (!userConfirmed) {
+                event.preventDefault();
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagu Terbaru</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        .container {
+            padding: 2em;
+        }
+        .song {
+            background-color: #fff;
+            margin: 1em 0;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .song h2 {
+            margin: 0;
+        }
+        .song p {
+            margin: 0.5em 0;
+        }
+        .song a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lagu Terbaru</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="lagu_terbaru.html">Lagu Terbaru</a>
+        <a href="populer.html">Populer</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="container">
+        <div class="song">
+            <h2>Linger</h2>
+            <p>Artis: The Cranberries</p>
+            <p><a href="The Cranberries - Linger (Official Music Video).mp3" download onclick="confirmDownload(event, 'Bangin')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>Oke</h2>
+            <p>Artis: K3BI</p>
+            <p><a href="Keilandboi - Oke (Music video).mp3" download onclick="confirmDownload(event, 'Oke')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>Songkok Mereng</h2>
+            <p>Artis: K3BI</p>
+            <p><a href="SONGKOK MERENG (LYRIC VIDEO).mp3" download onclick="confirmDownload(event, 'Songkok Mereng')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>Langit Biru</h2>
+            <p>Artis: Muria</p>
+            <p><a href="Langit Biru.mp3" download onclick="confirmDownload(event, 'Langit Biru')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>YOU JUST DON'T KNOW</h2>
+            <p>Artis: Serigala Malam</p>
+            <p><a href="SERIGALA MALAM - YOU JUST DON'T KNOW (OFFICIAL LYRIC VIDEO).mp3" download onclick="confirmDownload(event, 'YOU JUST DON\'T KNOW')">Unduh</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Situs Web Unduh Lagu. Hak Cipta Dilindungi.</p>
+    </footer>
+    <script>
+        function confirmDownload(event, songTitle) {
+            const userConfirmed = confirm(`Apakah Anda yakin ingin mengunduh lagu "${songTitle}"?`);
+            if (!userConfirmed) {
+                event.preventDefault();
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Populer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        .container {
+            padding: 2em;
+        }
+        .song {
+            background-color: #fff;
+            margin: 1em 0;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .song h2 {
+            margin: 0;
+        }
+        .song p {
+            margin: 0.5em 0;
+        }
+        .song a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Populer</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="lagu_terbaru.html">Lagu Terbaru</a>
+        <a href="populer.html">Populer</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="container">
+        <div class="song">
+            <h2>Linger</h2>
+            <p>Artis: The Cranberries</p>
+            <p><a href="The Cranberries - Linger (Official Music Video).mp3" download onclick="confirmDownload(event, 'Bangin')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>Oke</h2>
+            <p>Artis: K3BI</p>
+            <p><a href="Keilandboi - Oke (Music video).mp3" download onclick="confirmDownload(event, 'Oke')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>Aku Kamu dan Samudra</h2>
+            <p>Artis: Rebellion Rose</p>
+            <p><a href="Rebellion Rose - Aku, Kamu dan Samudra (Official) Video Lirik.mp3" download onclick="confirmDownload(event, 'Songkok Mereng')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>Dear God</h2>
+            <p>Artis: Avenged Sevenfold</p>
+            <p><a href="Avenged Sevenfold - Dear God [Official Music Video].mp3" download onclick="confirmDownload(event, 'Langit Biru')">Unduh</a></p>
+        </div>
+        <div class="song">
+            <h2>YOU JUST DON'T KNOW</h2>
+            <p>Artis: Serigala Malam</p>
+            <p><a href="SERIGALA MALAM - YOU JUST DON'T KNOW (OFFICIAL LYRIC VIDEO).mp3" download onclick="confirmDownload(event, 'YOU JUST DON\'T KNOW')">Unduh</a></p>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Situs Web Unduh Lagu. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        .container {
+            padding: 2em;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tentang Kami</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="lagu_terbaru.html">Lagu Terbaru</a>
+        <a href="populer.html">Populer</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="container">
+        <p>Situs Web Unduh Lagu adalah platform untuk mengunduh lagu-lagu favorit Anda. Kami menyediakan berbagai macam lagu dari berbagai genre dan artis. Nikmati pengalaman mendengarkan musik yang mudah dan cepat bersama kami.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Situs Web Unduh Lagu. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        .container {
+            padding: 2em;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2em;
+        }
+        .contact-form h2 {
+            margin-top: 0;
+        }
+        .contact-form label {
+            display: block;
+            margin: 0.5em 0 0.2em;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 0.5em 2em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kontak</h1>
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="lagu_terbaru.html">Lagu Terbaru</a>
+        <a href="populer.html">Populer</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="container">
+        <div class="contact-form">
+            <h2>Kontak Kami</h2>
+            <form action="send_message.php" method="post" onsubmit="return validateForm()">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Situs Web Unduh Lagu. Hak Cipta Dilindungi.</p>
+    </footer>
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            if (!name || !email || !message) {
+                alert('Semua kolom harus diisi!');
+                return false;
+            }
+            alert('Pesan Anda telah dikirim!');
+            return true;
+        }
+    </script>
+</body>
+</html>
